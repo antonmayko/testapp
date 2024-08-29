@@ -18,7 +18,7 @@ jobs:
           images: |
             ${{ vars.DOCKERHUB_TESTAPP }}
           tags: |
-            type=sha,format=short,prefix=
+            type=semver,pattern={{version}}
 
       - uses: actions/checkout@v4
 
