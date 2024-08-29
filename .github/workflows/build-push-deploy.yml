@@ -34,7 +34,6 @@ jobs:
           push: true
           tags: |
             ${{ steps.meta.outputs.tags }}
-            ${{ vars.DOCKERHUB_TESTAPP }}:latest
 
       - name: Check kuberentes cluster
         uses: actions-hub/kubectl@master
